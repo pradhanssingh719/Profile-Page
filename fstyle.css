@@ -10,6 +10,13 @@ body{
   //background-size: cover;
   background-color:   #eeccff;
 }
+.menucontent{
+  box-sizing: border-box;
+  border: 1px solid red;
+  padding: 15px;
+  background-color: purple;
+  text-align: right
+}
 .menu a{
   color: white;
   font-weight: bold;
@@ -18,14 +25,41 @@ body{
   margin: 10px;
   //width: auto;
   /*text-align: right; this one not working bsz there nothing inside menu class*/
-  //border: 1px solid red;
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 5px;
+  //background-color: lightblue;
 }
-.menucontent{
-  border: 1px solid red;
-  padding: 10px;
-  background-color: purple;
-  text-align: right
+.menu a:hover{
+  color: red;
+  background-color: black;
+  border: 2px solid red;
+}
+.photos{
+  height: 200px;
+  width: 200px;
+  padding-top: 15px;
+}
+.ceo, .cto, .tech, .operations{
+  display: inline-block;
+}
+.top, .middle, .below{
+  text-align: center;
+}
+
+.member{
+  width: 250px;
+  border: 2px solid black;
+  //padding: 0px 3px;
+  margin: 10px;
+  background-color: orange;
+}
+.tech{
+  width: 220px;
+}
+.member p{
+  text-align: center;
 }
 p{
-  font-family: cursive;
+  font-family: cursive; /*not working*/
 }
