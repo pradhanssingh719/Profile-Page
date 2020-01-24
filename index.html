@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Data Collection</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>User Profile</h1>
+    <h3>Please fill all the details!!!</h3>
+    <form class="userDetails" action="index.html" method="post">
+      <div class="labelname">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required placeholder="Enter your first name">
+        <br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required placeholder="Enter your last name">
+        <br><br>
+        <label for="cnumber">Contact Number:</label>
+        <input type="number" id="cnumber" name="cnumber" required placeholder="Enter your number">
+        <br><br>
+        <label for="caste">Caste:</label>
+        <select id="caste" name="caste">
+          <option selected hidden value=""></option>
+          <option value="ST">ST</option>
+          <option value="SC">SC</option>
+          <option value="OBS">OBC</option>
+          <option value="General">General</option>
+          <option value="Other">Other</option>
+        </select>
+        <br><br>
+        <label for="email">Email-Id:</label>
+        <input type="text" id="email" name="email" required placeholder="example@gmail.com">
+        <br><br>
+        <label for="game">Favourite Game:</label>
+        <input id="game" list="games" name="game" required>
+        <datalist id="games">
+          <option value="Cricket"></option>
+          <option value="Football"></option>
+          <option value="Handball"></option>
+          <option value="Basketball"></option>
+          <option value="Kabbadi"></option>
+        </datalist>
+        <br><br>
+        <input type="submit" value="Done">
+      </div>
+    </form>
+  </body>
+</html>

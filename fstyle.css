@@ -1,0 +1,31 @@
+/*.menu{
+  //background-color: Blue;
+  //width: auto;
+
+  //padding: 10px;
+}*/
+body{
+  //background-image: linear-gradient(blue, purple);
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  background-color:   #eeccff;
+}
+.menu a{
+  color: white;
+  font-weight: bold;
+  font-family: cursive; /*not working*/
+  font-size: 20px;
+  margin: 10px;
+  //width: auto;
+  /*text-align: right; this one not working bsz there nothing inside menu class*/
+  //border: 1px solid red;
+}
+.menucontent{
+  border: 1px solid red;
+  padding: 10px;
+  background-color: purple;
+  text-align: right
+}
+p{
+  font-family: cursive;
+}
