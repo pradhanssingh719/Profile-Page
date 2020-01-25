@@ -11,20 +11,25 @@ body{
   background-color:   #eeccff;
 }
 .menucontent{
-  box-sizing: border-box;
-  border: 1px solid red;
-  padding: 15px;
+  //box-sizing: border-box;
+  //border: 1px solid red;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: purple;
-  text-align: right
+  text-align: right;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 .menu a{
   color: white;
   font-weight: bold;
-  font-family: cursive; /*not working*/
+  /*font-family: cursive; not working (update: working but font not available in ubuntu)*/
   font-size: 20px;
   margin: 10px;
   //width: auto;
-  /*text-align: right; this one not working bsz there nothing inside menu class*/
+  /*text-align: right; this one not working bcz there is nothing inside menu class*/
   border: 2px solid black;
   border-radius: 7px;
   padding: 5px;
@@ -35,6 +40,14 @@ body{
   background-color: black;
   border: 2px solid red;
 }
+.logo{
+  height: 200px;
+  width: 200px;
+}
+
+/*#about p{
+  display: inline-block;
+}*/
 .photos{
   height: 200px;
   width: 200px;
@@ -61,5 +74,5 @@ body{
   text-align: center;
 }
 p{
-  font-family: cursive; /*not working*/
+  //font-family: georgia;
 }
