@@ -1,49 +1,112 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>User Data Collection</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <!--<meta charset="utf-8">-->
+    <link rel="stylesheet" href="istyle.css" type="text/css">
+    <title>User Profile</title>
   </head>
   <body>
-    <h1>User Profile</h1>
-    <h3>Please fill all the details!!!</h3>
-    <form class="userDetails" action="index.html" method="post">
-      <div class="labelname">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" required placeholder="Enter your first name">
-        <br><br>
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname" required placeholder="Enter your last name">
-        <br><br>
-        <label for="cnumber">Contact Number:</label>
-        <input type="number" id="cnumber" name="cnumber" required placeholder="Enter your number">
-        <br><br>
-        <label for="caste">Caste:</label>
-        <select id="caste" name="caste">
-          <option selected hidden value=""></option>
-          <option value="ST">ST</option>
-          <option value="SC">SC</option>
-          <option value="OBS">OBC</option>
-          <option value="General">General</option>
-          <option value="Other">Other</option>
-        </select>
-        <br><br>
-        <label for="email">Email-Id:</label>
-        <input type="text" id="email" name="email" required placeholder="example@gmail.com">
-        <br><br>
-        <label for="game">Favourite Game:</label>
-        <input id="game" list="games" name="game" required>
-        <datalist id="games">
-          <option value="Cricket"></option>
-          <option value="Football"></option>
-          <option value="Handball"></option>
-          <option value="Basketball"></option>
-          <option value="Kabbadi"></option>
-        </datalist>
-        <br><br>
-        <input type="submit" value="Done">
+  <div class="menucontent">
+  <div class="menu">
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+  </div>
+  <img src="khidki.png" alt="khidki logo" class="logo">
+
+  </div>
+    <div class="topcontent">
+    <div id="about">
+      <h2>About Khidki</h2>
+         <img src="khidki.png" alt="khidki logo" class="logo2">
+         <p>Khidki Software Private Limited is a Private incorporated on 15 September 2017.
+         It is classified as Non-govt company and is registered at Registrar of Companies, Bangalore.
+         Now do not just buy but also earn. Make videos of products, go live with the products you bought and earn on every sell
+         Watch interesting videos and share your videos. Go live and share your views, show what is happening.</p>
+        <!-- <video src="khidkivideo.mp4" autoplay poster="posterimage.jpg" controls class="khidki-video"> posterimage used for video preview
+          video not support!!!
+        </video> -->
+    </div>
+  </div>
+    <div id="team">
+      <h2>Khidki Team</h2>
+      <div class="top">
+        <div class="member ceo">
+          <a href="https://www.linkedin.com/in/kumrsaurabh/" target="_blank"><img src="members/saurabh.jpg" alt="saurabh" class="photos"></a>
+          <h2>Kumar Saurabh</h2>
+          <p><strong>Position:</strong> CEO</p>
+          <p><strong>Email: </strong>ks@khidkiapp.com</p>
+        </div>
+        <div class="member cto">
+          <a href="https://www.linkedin.com/in/agrkapil/" target="_blank"><img src="members/kapil.jpg" alt="kapil" class="photos"></a>
+          <h2>Kapil Agrawal</h2>
+          <p><strong>Position: </strong>CTO</p>
+          <p><strong>Email: </strong>ka@khidkiapp.com</p>
+        </div>
       </div>
-    </form>
+      <div class="middle">
+        <div class="member tech">
+          <a href="https://www.linkedin.com/in/hardik-kakadiya-229814129/" target="_blank"><img src="members/hardik.jpg" alt="hardik" class="photos"></a>
+          <h2>Hardik Kakadiya</h2>
+          <p><strong>Position: </strong>Senior Software Engineer</p>
+          <p><strong>Email: </strong>hk@khidkiapp.com</p>
+        </div>
+        <div class="member tech">
+          <a href="https://www.linkedin.com/in/rajinikanth0602/" target="_blank"><img src="members/rk.jpg" alt="rk" class="photos"></a>
+          <h2>Rajanikanth Maila</h2>
+          <p><strong>Position: </strong>Senior Android Developer</p>
+          <p><strong>Email: </strong>rajni@khidkiapp.com</p>
+        </div>
+        <div class="member tech">
+          <a href="https://www.linkedin.com/in/tezzsurya/" target="_blank"><img src="members/teja.jpg" alt="teja" class="photos"></a>
+          <h2>Teja Surya</h2>
+          <p><strong>Position: </strong>Senior Software Engineer</p>
+          <p><strong>Email: </strong>ts@khidkiapp.com</p>
+        </div>
+      </div>
+      <div class="below">
+        <div class="member operations">
+          <a href="https://www.linkedin.com/in/ritika-sinha-57528b65/" target="_blank"><img src="members/ritika.jpg" alt="ritika" class="photos"></a>
+          <h2>Ritika Sinha</h2>
+          <p><strong>Position: </strong>Automation</p>
+          <p><strong>Email: </strong>rs@khidkiapp.com</p>
+        </div>
+        <div class="member operations">
+          <a href="https://www.linkedin.com/in/rksquare/" target="_blank"><img src="members/ravi.jpg" alt="ravi" class="photos"></a>
+          <h2>RaviKishan Kushwah</h2>
+          <p><strong>Position: </strong>UI Designer</p>
+          <p><strong>Email:</strong>rk@khidkiapp.com</p>
+        </div>
+        <div class="member operations">
+          <a href="https://www.linkedin.com/in/pradhan-singh-meena-6a18b4104/" target="_blank"><img src="members/pradhan.jpg" alt="pradhan" class="photos"></a>
+          <h2>Pradhan Singh</h2>
+          <p><strong>Position: </strong>Front End Developer</p>
+          <p><strong>Email: </strong>ps@khidkiapp.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <h2>Gallery</h2>
+      <h3>Photos & Videos</h3>
+      <video src="gallery/khidkivideo.mp4" autoplay poster="" controls class="khidkivideo"> posterimage used for video preview
+        video not support!!!
+      </video>
+      <img src="gallery/1.jpg" class="pics">
+      <img src="gallery/2.jpg" class="pics">
+      <img src="gallery/3.jpg" class="pics">
+      <img src="gallery/4.jpg" class="pics">
+      <img src="gallery/5.jpg" class="pics">
+      <img src="gallery/6.jpg" class="pics">
+
+    </div>
+    <div id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="https://www.khidkiapp.com/" target="_blank"><img src="media/web.png" alt="website" class="media"> Website</a></li>
+        <li><a href="https://www.linkedin.com/company/aroundz/" target="_blank"><img src="media/linkedin.png" alt="linkedin" class="media"> Linkedin</a></li>
+        <li><a href="https://www.facebook.com/khidkiApp/" target="_blank"><img src="media/fb.png" alt="Facebook" class="media"> Facebook</a></li>
+      </ul>
+      <!--<h1><a href="index.html">Click Here</a></h1>-->
+    </div>
   </body>
 </html>
