@@ -21,7 +21,7 @@ body{
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 5; /*z-index support integer value, higer value appear at top*/
+  z-index: 1; /*z-index support integer value, higer value appear at top*/
 }
 .menu a{
   color: white;
@@ -41,17 +41,26 @@ body{
   background-color: black;
   border: 2px solid red;
 }
+.bharatbiz{
+  position: fixed;
+  left:90px;
+  z-index: 3;
+  height: 80px;
+  //width: 60px;
+}
 .logo{
   height: 80px;
   width: 80px;
   position: fixed;
   top: 10px;
   left: 10px;
-  z-index: 10;
+  z-index: 2;
 }
+
 .logo2{
   height: 300px;
   width: 300px;
+
 }
 #about p{
   position: absolute;
@@ -60,6 +69,7 @@ body{
   font-size: 25px;
   width: 800px;
 }
+
 .photos{
   height: 200px;
   width: 200px;
@@ -91,7 +101,7 @@ body{
   position: relative;
   top: 100px;
 }
-#team, #contact, .gallery{
+#team, #contact, .gallery, .details{
   position: relative;
   top: 100px;
 }
@@ -103,9 +113,22 @@ body{
   height: 440px;
   width: 200px;
 }
+.details{
+  text-align: center;
+}
+.details a{
+  color: blue;
+}
+.details a:hover{
+  color: red;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 3px;
+}
 #contact{
   background-color: #262626;
   color: white;
+  width: 100%;
 }
 ul{
   text-align: right;
@@ -115,7 +138,7 @@ ul{
 li{
   display: inline-block;
   //color: white;
-  font-size: 25px;
+  font-size: 28px;
   margin-left: 20px;
 }
 #contact a{
@@ -125,8 +148,8 @@ li{
   color: lightblue;
 }
 .media{
-  height: 25px;
-  width: 25px;
+  height: 23px;
+  width: 23px;
 }
 p{
   //font-family: georgia;
