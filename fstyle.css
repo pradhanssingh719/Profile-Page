@@ -8,19 +8,20 @@ body{
   //background-image: linear-gradient(blue, purple);
   //background-repeat: no-repeat;
   //background-size: cover;
-  background-color:   #eeccff;
+  background-color: #eeccff;
 }
 .menucontent{
   //box-sizing: border-box;
   //border: 1px solid red;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   background-color: purple;
   text-align: right;
-  position: absolute;
+  position: fixed;   /*this class elemets are fixed in the webpage...irrespect of scrolling*/
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 5; /*z-index support integer value, higer value appear at top*/
 }
 .menu a{
   color: white;
@@ -41,13 +42,24 @@ body{
   border: 2px solid red;
 }
 .logo{
-  height: 200px;
-  width: 200px;
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
 }
-
-/*#about p{
-  display: inline-block;
-}*/
+.logo2{
+  height: 300px;
+  width: 300px;
+}
+#about p{
+  position: absolute;
+  top: 85px;
+  left: 350px;
+  font-size: 25px;
+  width: 800px;
+}
 .photos{
   height: 200px;
   width: 200px;
@@ -59,7 +71,6 @@ body{
 .top, .middle, .below{
   text-align: center;
 }
-
 .member{
   width: 250px;
   border: 2px solid black;
@@ -67,11 +78,55 @@ body{
   margin: 10px;
   background-color: orange;
 }
+.member:hover{
+  transform: scale(1.1);
+}
 .tech{
   width: 220px;
 }
 .member p{
   text-align: center;
+}
+#about{
+  position: relative;
+  top: 100px;
+}
+#team, #contact, .gallery{
+  position: relative;
+  top: 100px;
+}
+.pics{
+  height: 400px;
+  width: 200px;
+}
+.khidkivideo{
+  height: 445px;
+  width: 200px;
+}
+#contact{
+  background-color: #262626;
+  color: white;
+}
+ul{
+  text-align: right;
+  list-style: none;
+  //color: white;
+}
+li{
+  display: inline-block;
+  //color: white;
+  font-size: 25px;
+  margin-left: 20px;
+}
+#contact a{
+  color: white;
+}
+#contact a:hover{
+  color: lightblue;
+}
+.media{
+  height: 25px;
+  width: 25px;
 }
 p{
   //font-family: georgia;
