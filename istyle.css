@@ -41,13 +41,22 @@ body{
   background-color: black;
   border: 2px solid red;
 }
-.bharatbiz{
+.company_name h2{
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+  position: fixed;
+  top: -10px;
+  left: 90px;
+  z-index: 4;
+}
+/* .bharatbiz{
   position: fixed;
   left:90px;
   z-index: 3;
   height: 80px;
   //width: 60px;
-}
+} */
 .logo{
   height: 80px;
   width: 80px;
